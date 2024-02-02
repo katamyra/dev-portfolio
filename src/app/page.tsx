@@ -6,32 +6,23 @@ import { motion } from "framer-motion";
 import AnimatedTextWord from "@/components/ui/AnimatedTextWord";
 import Link from "next/link"
 import Particles from "react-tsparticles";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+
 
 
 
 export default function Home() {
   
-  const particlesOptions = {
-    particles: {
-      number: {
-        value: 80,
-      },
-      size: {
-        value: 10,
-      },
-      color: {
-        value: "#ff0000", // Set your color here. This is red.
-      },
-    },
-    interactivity: {
-      events: {
-        onhover: {
-          enable: true,
-          mode: "repulse",
-        },
-      },
-    },
-  }
+
   
   return (
     <div>
@@ -43,9 +34,23 @@ export default function Home() {
             <Button variant="ghost">Projects</Button> {" "}
           </Link>
           /
-          <Link href="/contact">
-            <Button variant="ghost">Contact Me</Button>
-          </Link>
+          <Drawer>
+            <DrawerTrigger><Button variant="ghost">Contact Me</Button></DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader>
+                <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                <DrawerDescription>This action cannot be undone.</DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter>
+                <Button>Submit</Button>
+                <DrawerClose>
+                  <Button variant="outline">Cancel</Button>
+                </DrawerClose>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+        
+        
           
         </div>
         <motion.div
@@ -57,10 +62,6 @@ export default function Home() {
             Katamyra
           </h1>
         </motion.div>
-        <Particles
-          id="my-particles"
-          options={particlesOptions}
-        />
         <AnimatedTextWord text="I'm Krish Katariya, a CS Major at Georgia Tech. I am interested in building full stack applications, especially with a specialization in AI."></AnimatedTextWord>
         
       </div>
