@@ -7,7 +7,9 @@ import AnimatedTextWord from "@/components/ui/AnimatedTextWord";
 import Link from "next/link"
 import AboutMe from '@/components/ui/AboutMe'
 import {useRouter} from 'next/navigation'
-
+import { Orbitron } from "next/font/google";
+import Particles from 'react-tsparticles';
+import ParticleBackground from '@/components/ui/ParticleBackground'
 import {
   Drawer,
   DrawerClose,
@@ -18,20 +20,22 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-
+const orbitron = Orbitron({subsets: ["latin"]});
 export default function Home() {
   const router = useRouter();
+
   
   return (
     <div>
+
       <div className="container mx-auto mt-80 flex flex-col items-center ">
-      
+        
         <div className="space-x-2 pr-4">
         <Button variant="ghost">
           <a href="/projects">Projects </a>{"   "}
         </Button>
 
-
+          
           /
           <Drawer>
             <DrawerTrigger asChild><Button variant="ghost">Contact Me</Button></DrawerTrigger>
@@ -59,13 +63,20 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-9xl pb-4">
-            Katamyra
-          </h1>
+          <div className={orbitron.className}>
+            <h1 className="text-9xl pb-4">
+              Katamyra
+            </h1>
+          </div>
         </motion.div>
         <AnimatedTextWord text="I'm Krish Katariya, a CS Major at Georgia Tech. I am interested in building full stack applications, especially with a specialization in AI."></AnimatedTextWord>
         <AboutMe></AboutMe>
       </div>
+      <ParticleBackground
+        className="absolute inset-0 -z-10 animate-fade-in"
+        quantity={200}
+      ></ParticleBackground>
+
     </div>
   );
 }
