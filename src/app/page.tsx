@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import AnimatedTextWord from "@/components/ui/AnimatedTextWord";
 import Link from "next/link"
 import Particles from "react-tsparticles";
+import AboutMe from '@/components/ui/AboutMe'
+
 import {
   Drawer,
   DrawerClose,
@@ -17,16 +19,11 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 
-
-
-
 export default function Home() {
-  
-
   
   return (
     <div>
-      <div className="container mx-auto mt-80 flex flex-col items-center">
+      <div className="container mx-auto mt-80 flex flex-col items-center ">
       
         <div className="space-x-2">
 
@@ -35,23 +32,27 @@ export default function Home() {
           </Link>
           /
           <Drawer>
-            <DrawerTrigger><Button variant="ghost">Contact Me</Button></DrawerTrigger>
+            <DrawerTrigger asChild><Button variant="ghost">Contact Me</Button></DrawerTrigger>
             <DrawerContent>
-              <DrawerHeader>
-                <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-                <DrawerDescription>This action cannot be undone.</DrawerDescription>
-              </DrawerHeader>
+              <div>
+                <DrawerHeader>
+                  <DrawerTitle>Contact Me!</DrawerTitle>
+                  <DrawerDescription>Here are the links to contact me / view my socials on different pages</DrawerDescription>
+                  <p> My Email: krishkatariya@outlook.com </p>
+                  <p>Github: <a href="https://github.com/katamyra">github.com/katamyra</a></p>
+                  <p>Linked In: <a>Linked In Link</a></p>
+                  
+
+
+                </DrawerHeader>
+              </div>
               <DrawerFooter>
-                <Button>Submit</Button>
                 <DrawerClose>
                   <Button variant="outline">Cancel</Button>
                 </DrawerClose>
               </DrawerFooter>
             </DrawerContent>
-          </Drawer>
-        
-        
-          
+          </Drawer> 
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +64,7 @@ export default function Home() {
           </h1>
         </motion.div>
         <AnimatedTextWord text="I'm Krish Katariya, a CS Major at Georgia Tech. I am interested in building full stack applications, especially with a specialization in AI."></AnimatedTextWord>
-        
+        <AboutMe></AboutMe>
       </div>
     </div>
   );
