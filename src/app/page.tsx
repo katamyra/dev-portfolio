@@ -5,8 +5,8 @@ import {Button} from '@/components/ui/button';
 import { motion } from "framer-motion";
 import AnimatedTextWord from "@/components/ui/AnimatedTextWord";
 import Link from "next/link"
-import Particles from "react-tsparticles";
 import AboutMe from '@/components/ui/AboutMe'
+import {useRouter} from 'next/navigation'
 
 import {
   Drawer,
@@ -20,16 +20,18 @@ import {
 } from "@/components/ui/drawer"
 
 export default function Home() {
+  const router = useRouter();
   
   return (
     <div>
       <div className="container mx-auto mt-80 flex flex-col items-center ">
       
-        <div className="space-x-2">
+        <div className="space-x-2 pr-4">
+        <Button variant="ghost">
+          <a href="/projects">Projects </a>{"   "}
+        </Button>
 
-          <Link href="/projects">
-            <Button variant="ghost">Projects</Button> {" "}
-          </Link>
+
           /
           <Drawer>
             <DrawerTrigger asChild><Button variant="ghost">Contact Me</Button></DrawerTrigger>
@@ -42,8 +44,6 @@ export default function Home() {
                   <p>Github: <a href="https://github.com/katamyra">github.com/katamyra</a></p>
                   <p>Linked In: <a>Linked In Link</a></p>
                   
-
-
                 </DrawerHeader>
               </div>
               <DrawerFooter>
