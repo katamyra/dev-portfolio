@@ -11,6 +11,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { buttonVariants } from "@/components/ui/button"
+
 
 export function ContactSheet() {
   return (
@@ -27,8 +29,8 @@ export function ContactSheet() {
         </SheetHeader>
        
         <div className="grid gap-4 py-4">
-        <Label> Github Link: <a className="font-bold" href="https://github.com/katamyra"> Link</a> </Label> {" "} 
-        <Label> Linked In Link: <a className="font-bold" href="https://github.com/katamyra"> Link</a> </Label> {" "} 
+        <Label> Github Link: <Button className="pl-3" variant = "outline" asChild ><a className="font-bold" href="https://github.com/katamyra"> Link</a></Button> </Label> {" "} 
+        <Label> Linked In Link: <Button className="pl-3" variant = "outline" asChild ><a className="font-bold" href="https://github.com/katamyra"> Link</a></Button> </Label> {" "} 
         <Label> My Email: krishkatariya@outlook.com </Label> {" "} 
         
         </div>

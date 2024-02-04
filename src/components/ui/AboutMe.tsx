@@ -4,8 +4,12 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+import {Button} from "@/components/ui/button"
 
 const AboutMe = () => {
+    const handleDownload = () => {
+      console.log("test");
+    };
     return (
         <Accordion type="multiple" className="w-full">
          <AccordionItem value="item-1">
@@ -23,6 +27,10 @@ const AboutMe = () => {
           <AccordionTrigger>Classes I am Taking</AccordionTrigger>
           <AccordionContent>Some useful classes I have/are taking include: Computer Organization and Programming, Data Structures and Algorithms,
             Objects and Design, Linear Algebra, and Intro to Object Oriented Programming. </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-4">
+          <AccordionTrigger>My Resume</AccordionTrigger>
+          <AccordionContent><Button variant="outline"><a target="_" href = "/KrishGTResume.pdf">Click to View Resume</a></Button></AccordionContent>
         </AccordionItem>
         
        
