@@ -10,6 +10,7 @@ import {useRouter} from 'next/navigation'
 import { Orbitron } from "next/font/google";
 import Particles from 'react-tsparticles';
 import ParticleBackground from '@/components/ui/ParticleBackground'
+import Typewriter from 'typewriter-effect'; 
 import {
   Drawer,
   DrawerClose,
@@ -35,7 +36,7 @@ export default function Home() {
           <a href="/projects">Projects </a>{"   "}
         </Button>
 
-          
+        
           /
           <Drawer>
             <DrawerTrigger asChild><Button variant="ghost">Contact Me</Button></DrawerTrigger>
@@ -57,7 +58,14 @@ export default function Home() {
               </DrawerFooter>
             </DrawerContent>
           </Drawer> 
+          /
+          <Button variant="ghost">
+            Notes
+          </Button>
         </div>
+
+        
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,7 +77,31 @@ export default function Home() {
             </h1>
           </div>
         </motion.div>
-        <AnimatedTextWord text="I'm Krish Katariya, a CS Major at Georgia Tech. I am interested in building full stack applications, especially with a specialization in AI."></AnimatedTextWord>
+
+        <div className="text-2xl flex justify-between">
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+           
+            <p className="text-2xl pr-2">
+              I{"'"}m Krish Katariya, a
+            </p>
+  
+          </motion.div>
+          <Typewriter
+            options = {{
+              strings: ["software developer", "georgia Tech CS Student"],
+              autoStart: true,
+              delay: 75,
+              loop: true,
+            }}
+          
+              />
+        </div>
+        <AnimatedTextWord text="I am interested in building full stack applications, especially with a specialization in AI."></AnimatedTextWord>
         <AboutMe></AboutMe>
       </div>
       <ParticleBackground
