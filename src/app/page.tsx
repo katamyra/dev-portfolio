@@ -21,6 +21,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
+import { ContactSheet } from "@/components/ui/ContactSheet";
 const orbitron = Orbitron({subsets: ["latin"]});
 export default function Home() {
   const router = useRouter();
@@ -38,31 +39,16 @@ export default function Home() {
 
         
           /
-          <Drawer>
-            <DrawerTrigger asChild><Button variant="ghost">Contact Me</Button></DrawerTrigger>
-            <DrawerContent>
-              <div>
-                <DrawerHeader>
-                  <DrawerTitle>Contact Me!</DrawerTitle>
-                  <DrawerDescription>Here are the links to contact me / view my socials on different pages</DrawerDescription>
-                  <p> My Email: krishkatariya@outlook.com </p>
-                  <p>Github: <a href="https://github.com/katamyra">github.com/katamyra</a></p>
-                  <p>Linked In: <a>Linked In Link</a></p>
-                  
-                </DrawerHeader>
-              </div>
-              <DrawerFooter>
-                <DrawerClose>
-                  <Button variant="outline">Cancel</Button>
-                </DrawerClose>
-              </DrawerFooter>
-            </DrawerContent>
-          </Drawer> 
-          /
-          <Button variant="ghost">
-            Notes
-          </Button>
-        </div>
+        
+      
+          <ContactSheet>
+          </ContactSheet>
+       
+          / { " "}
+        <Button variant="ghost">
+          Notes
+        </Button>
+      </div>
 
         
         
