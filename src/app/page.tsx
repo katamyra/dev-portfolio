@@ -8,7 +8,6 @@ import Link from "next/link"
 import AboutMe from '@/components/ui/AboutMe'
 import {useRouter} from 'next/navigation'
 import { Orbitron } from "next/font/google";
-import Particles from 'react-tsparticles';
 import ParticleBackground from '@/components/ui/ParticleBackground'
 import Typewriter from 'typewriter-effect'; 
 import {
@@ -22,6 +21,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { ContactSheet } from "@/components/ui/ContactSheet";
+import HeaderNav from "@/components/ui/HeaderNav";
 const orbitron = Orbitron({subsets: ["latin"]});
 export default function Home() {
   const router = useRouter();
@@ -32,24 +32,7 @@ export default function Home() {
 
       <div className="container mx-auto mt-80 flex flex-col items-center ">
         
-        <div className="space-x-2 pr-4">
-        <Button variant="ghost">
-          <a href="/projects">Projects </a>{"   "}
-        </Button>
-
-        
-          /
-        
-      
-          <ContactSheet>
-          </ContactSheet>
-       
-          / { " "}
-        <Button variant="ghost">
-          Notes
-        </Button>
-      </div>
-
+        <HeaderNav/>
         
         
         <motion.div

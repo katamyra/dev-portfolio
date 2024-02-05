@@ -1,23 +1,20 @@
 "use client"
-import AnimatedTextWord from '@/components/ui/AnimatedTextWord';
-import { CarouselItem } from '@/components/ui/carousel';
-import ParticleBackground from '@/components/ui/ParticleBackground';
+import { motion, useScroll } from "framer-motion"
+import { useRef } from "react"
+
 export default function Contact() {
-    return (
-      <div>
-        <div className="flex">
-          <div className="mockup-window border bg-base-500 w-1/2">
-            <div className="flex justify-center px-4 py-16 bg-base-600">Hello!</div>
-          </div>
-          <div className="w-1/2">
-            <h1 className="text-4xl font-bold">Right Half Text</h1>
-            <p className="text-lg">Some text content here...</p>
-          </div>
-        </div>
-      </div>
-        
-     
- 
-          
-    )
+  const scrollRef = useRef(null)
+  
+  return (
+    <div ref={scrollRef} style={{ overflow: "scroll" }}>
+      <motion.div
+      className="card-container"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
+      <h1>Test 123 123</h1>
+    </motion.div>
+    </div>
+  )
 }
