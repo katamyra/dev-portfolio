@@ -2,6 +2,5 @@
 
 ## ToDo
 * Create a decent read-me
+* Add a navigation component (daisy?)
 * Populate the projects page
-* Add a resume button option
-* Fix contact me (make it look nicer)

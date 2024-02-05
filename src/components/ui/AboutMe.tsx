@@ -14,7 +14,7 @@ const AboutMe = () => {
         <Accordion type="multiple" className="w-full">
          <AccordionItem value="item-1">
           <AccordionTrigger>Basic Info About Me</AccordionTrigger>
-          <AccordionContent>I{"'"}m a Georgia Tech student whose home resides in Irvine, California where I lived since college started.  </AccordionContent>
+          <AccordionContent>I{"'"}m a Georgia Tech student who lived in Southern California until college started. </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>Technologies That I am Learning</AccordionTrigger>

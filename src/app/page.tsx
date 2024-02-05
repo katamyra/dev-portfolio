@@ -56,15 +56,15 @@ export default function Home() {
           >
            
             <p className="text-2xl pr-2">
-              I{"'"}m Krish Katariya, a
+              I{"'"}m Krish Katariya, 
             </p>
   
           </motion.div>
           <Typewriter
             options = {{
-              strings: ["software developer", "georgia Tech CS Student"],
+              strings: ["a Software Developer", "a Georgia Tech CS Student", "an aspiring ML Engineer"],
               autoStart: true,
-              delay: 75,
+              delay: 90,
               loop: true,
             }}
           
