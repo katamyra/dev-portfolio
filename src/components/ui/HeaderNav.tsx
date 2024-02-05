@@ -1,7 +1,7 @@
 import { ContactSheet } from "./ContactSheet";
 import { Button } from "./button";
-
-
+import Router from "next/router";
+import { useRouter } from "next/router";
 export default function HeaderNav() {
     return (
         <div className="space-x-2 pr-4">

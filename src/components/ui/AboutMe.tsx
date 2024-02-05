@@ -14,7 +14,7 @@ const AboutMe = () => {
         <Accordion type="multiple" className="w-full">
          <AccordionItem value="item-1">
           <AccordionTrigger>Basic Info About Me</AccordionTrigger>
-          <AccordionContent>I{"'"}m a Georgia Tech student who lived in Southern California until college started. </AccordionContent>
+          <AccordionContent>I{"'"}m a Georgia Tech student who lived in Southern California until college started. I have a great interest in almost any field of programming. </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>Technologies That I am Learning</AccordionTrigger>
@@ -29,6 +29,13 @@ const AboutMe = () => {
             Objects and Design, Linear Algebra, and Intro to Object Oriented Programming. </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
+          <AccordionTrigger>My Skills</AccordionTrigger>
+          <AccordionContent>
+            <b>Programming:</b> Python, AWS, Javascript, C++, Java, Tensorflow <br></br>
+            <b>Soft skills:</b> Communication, Teamwork, Quick Learning                  
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-5">
           <AccordionTrigger>My Resume</AccordionTrigger>
           <AccordionContent><Button variant="outline"><a target="_" href = "/KrishGTResume.pdf">Click to View Resume</a></Button></AccordionContent>
         </AccordionItem>
