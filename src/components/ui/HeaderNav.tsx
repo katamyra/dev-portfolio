@@ -16,7 +16,7 @@ export default function HeaderNav() {
           <ContactSheet>
           </ContactSheet>
        
-          / { " "}
+          { " "} /
         <Button variant="ghost">
           <a href="/notes">Notes</a>
         </Button>
