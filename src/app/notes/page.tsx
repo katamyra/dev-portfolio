@@ -2,7 +2,7 @@
 export default function notes() {
     return (
         <div className="flex justify-center">
-            <h1 className="text-3xl"> Nothing here yet LOL i barely even have notes. But trust im on the notes grindset soon.</h1>
+            <h1 className="text-3xl"> Currently, I have not uploaded my notes here yet, but you can find them on my github!</h1>
         </div>
     )
 }
