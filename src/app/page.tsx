@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div>
 
-      <div className="container mx-auto mt-80 flex flex-col items-center ">
+      <div className="container mx-auto mt-30 lg:mt-80 flex flex-col items-center ">
         
         <HeaderNav/>
         
