@@ -90,7 +90,7 @@ export default function Projects() {
             <div className="flex justify-center">
                 <div>
                     <h1 className=" text-3xl text-center">Work Experience</h1>
-                    <h1 className=" text-3xl text-center">To be done eventually :D</h1>
+                    <h1 className=" text-3xl text-center">In progress, to be done soon!</h1>
                 </div>
             </div>
             
