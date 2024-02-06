@@ -71,7 +71,9 @@ export default function Home() {
                 />
           </div>
         </div>
-        <AnimatedTextWord text="I am interested in building full stack applications, especially with a specialization in AI."></AnimatedTextWord>
+        <div className="flex flex-wrap justify-center text-sm lg:text-xl">
+          <AnimatedTextWord text="I am interested in building full stack applications, especially with a specialization in AI." />
+        </div>
         <AboutMe></AboutMe>
       </div>
       <ParticleBackground
