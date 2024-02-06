@@ -40,7 +40,7 @@ export default function Home() {
           transition={{ duration: 1 }}
         >
           <div className={orbitron.className}>
-            <h1 className="text-9xl pb-4">
+            <h1 className="lg:text-9xl text-xl pb-4">
               Katamyra
             </h1>
           </div>
