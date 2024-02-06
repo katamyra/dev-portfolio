@@ -59,7 +59,7 @@ export default function Projects() {
                                         </h1>
                                     </div>
                                     <div className="flex justify-center px-4 pb-10 bg-base-350">
-                                        <Image src={`/nextjs-github-pages/project${index+1}.png`} alt="Project Screenshot" width={500} height={300} className="mx-auto p-2" />
+                                        <Image src={`/project${index+1}.png`} alt="Project Screenshot" width={500} height={300} className="mx-auto p-2" />
                                     </div>
                                 </div>
                               
