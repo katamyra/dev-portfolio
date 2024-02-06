@@ -54,7 +54,7 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
            
-            <p className="lg:text-2xl pr-2 sm:text-sm">
+            <p className="lg:text-2xl pr-2 text-sm">
               I{"'"}m Krish Katariya, 
             </p>
   
