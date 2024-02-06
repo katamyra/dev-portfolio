@@ -31,7 +31,7 @@ const AboutMe = () => {
         <AccordionItem value="item-4">
           <AccordionTrigger>My Skills</AccordionTrigger>
           <AccordionContent>
-            <b>Programming:</b> Python, AWS, Javascript, C++, Java, Tensorflow <br></br>
+            <b>Programming:</b> Python, Javascript, React, C++, Java, Tensorflow <br></br>
             <b>Soft skills:</b> Communication, Teamwork, Quick Learning                  
           </AccordionContent>
         </AccordionItem>

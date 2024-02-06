@@ -18,7 +18,7 @@ export default function HeaderNav() {
        
           / { " "}
         <Button variant="ghost">
-          Notes
+          <a href="/notes">Notes</a>
         </Button>
       </div>
 
