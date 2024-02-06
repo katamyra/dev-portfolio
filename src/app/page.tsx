@@ -59,15 +59,17 @@ export default function Home() {
             </p>
   
           </motion.div>
-          <Typewriter
-            options = {{
-              strings: ["a Software Developer", "a Georgia Tech CS Student", "an aspiring ML Engineer"],
-              autoStart: true,
-              delay: 90,
-              loop: true,
-            }}
-          
-              />
+          <div className="lg:text-2xl text-sm">
+            <Typewriter
+              options = {{
+                strings: ["a Software Developer", "a Georgia Tech CS Student", "an aspiring ML Engineer"],
+                autoStart: true,
+                delay: 90,
+                loop: true,
+              }}
+            
+                />
+          </div>
         </div>
         <AnimatedTextWord text="I am interested in building full stack applications, especially with a specialization in AI."></AnimatedTextWord>
         <AboutMe></AboutMe>
