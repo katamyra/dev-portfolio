@@ -10,18 +10,6 @@ import { Orbitron } from "next/font/google";
 import ParticleBackground from '@/components/ui/ParticleBackground'
 import Typewriter from 'typewriter-effect'; 
 import AnimatedCursor from 'react-animated-cursor';
-import MeCarousel from '@/components/ui/MeCarousel'
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer"
-import { ContactSheet } from "@/components/ui/ContactSheet";
 import HeaderNav from "@/components/ui/HeaderNav";
 const orbitron = Orbitron({subsets: ["latin"]});
 import Header from "@/components/ui/Header";
