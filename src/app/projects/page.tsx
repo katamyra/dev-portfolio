@@ -31,9 +31,11 @@ export default function Projects() {
                 className="absolute -z-10 animate-fade-in w-full h-full"
                 quantity={200}
             ></ParticleBackground>
-            <div className="flex">
-                <div className="flex-1 p-4">
             
+            <div className="flex">
+                
+                <div className="flex-1 p-4">
+                    <h1 className="text-3xl text-center"> My Projects </h1>
                     {projectNames.map((item, index) => (
                         <div key={index}>
                             <div data-aos="fade" key={index} className={`flex pb-6 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
