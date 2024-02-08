@@ -18,7 +18,7 @@ export function ContactSheet() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost">Contact Me</Button>
+        <Button variant="ghost"><p className="text-red-400">Contact Me</p></Button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
