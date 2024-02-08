@@ -26,10 +26,7 @@ export default function Projects() {
         
         <div className="h-screen">
             <Header></Header>
-            <AnimatedCursor></AnimatedCursor>
-
-          
-            
+            <AnimatedCursor></AnimatedCursor>        
             <ParticleBackground
                 className="absolute -z-10 animate-fade-in w-full h-full"
                 quantity={200}
@@ -61,8 +58,7 @@ export default function Projects() {
                                                 <Link href={`$projectLinks[index]`}> Link To Project </Link>
                                             </Button>
                                         </div>
-                                    )}
-                                   
+                                    )} 
                                    
                                 </div>
                             </div>
@@ -76,17 +72,7 @@ export default function Projects() {
                     ))}
                 </div>
                 
-            </div>
-            <div className="flex justify-center">
-                <div>
-                    <h1 className=" text-3xl text-center">Work Experience</h1>
-                    <h1 className=" text-3xl text-center">In progress, to be done soon!</h1>
-                </div>
-            </div>
-            
-
-
-           
+            </div>    
         </div>
     )
 }
