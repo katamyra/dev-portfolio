@@ -10,7 +10,6 @@ import { Orbitron } from "next/font/google";
 import ParticleBackground from '@/components/ui/ParticleBackground'
 import Typewriter from 'typewriter-effect'; 
 import AnimatedCursor from 'react-animated-cursor';
-import HeaderNav from "@/components/ui/HeaderNav";
 const orbitron = Orbitron({subsets: ["latin"]});
 import Header from "@/components/ui/Header";
 export default function Home() {
@@ -27,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Header></Header>
-      <div className="container mt-30 lg:mt-60 flex flex-col items-center ">
+      <div className="mt-40 flex flex-col items-center ">
       
         
         <motion.div
