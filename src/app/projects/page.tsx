@@ -11,7 +11,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from '@/components/ui/Header';
 import AnimatedCursor from 'react-animated-cursor';
-
+import { Share_Tech } from "next/font/google";
+const sharetech = Share_Tech({weight: '400', subsets: ['latin']});
+import { Weight } from "lucide-react";
 const raleway = Raleway({subsets: ["latin"]});
 
 
@@ -31,7 +33,9 @@ export default function Projects() {
                 className="absolute -z-10 animate-fade-in w-full h-full"
                 quantity={200}
             ></ParticleBackground>
-            <h1 className="text-5xl text-center pb-5"> My Projects </h1>
+            <div className={sharetech.className}>
+                <h1 className="text-5xl text-center pb-5"> My Projects </h1>
+            </div>
             
                 <div className="flex gap-10 pl-5 pr-5">
                     <div className="grow card w-96 bg-gray-900 shadow-xl">

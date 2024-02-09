@@ -11,6 +11,8 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import ParticleBackground from '@/components/ui/ParticleBackground'
+import { Share_Tech } from "next/font/google";
+const sharetech = Share_Tech({weight: '400', subsets: ['latin']});
 
 export default function notes() {
     return (
@@ -20,7 +22,7 @@ export default function notes() {
             <AnimatedCursor></AnimatedCursor>
             <div>
             <div className="text-5xl text-center pb-5">
-                <h1>A Collection of My Notes</h1>
+                <h1 className={sharetech.className}>A Collection of My Notes</h1>
             </div>
             <div className="grid grid-cols-3 gap-10">
                 <Card>
