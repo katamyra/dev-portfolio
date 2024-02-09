@@ -78,9 +78,9 @@ export default function Home() {
             <div className="flex-auto mockup-code w-1/2 bg-gray-900 pt-5">
               <pre data-prefix="$" className="text-success"><code>Name: Krish Katariya</code></pre>
               <pre data-prefix=">"><code>Age: 18</code></pre>
-              <pre data-prefix=">" className="text-warning"><code>School: Georgia Tech</code></pre>
+              <pre data-prefix=">" className="text-warning"><code>School: Georgia Tech - 4.0</code></pre>
               <pre data-prefix=">" ><code>Favorite Food? Any home cooked meal :)</code></pre>
-              <pre data-prefix=">" className="text-success"><code>Add More Fillers Here!</code></pre>                
+              <pre data-prefix=">" className="text-success"><code>Filler Here</code></pre>                
             </div>
           </div>
 

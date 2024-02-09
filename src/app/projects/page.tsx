@@ -24,67 +24,54 @@ export default function Projects() {
     let projectLinks = ["https://github.com/katamyra/ProjectIris", "https://github.com/katamyra/SmartPage", ]
     return (
         
-        <div className="h-screen">
+        <div className="h-screen w-screen">
             <Header></Header>
             <AnimatedCursor></AnimatedCursor>        
             <ParticleBackground
                 className="absolute -z-10 animate-fade-in w-full h-full"
                 quantity={200}
             ></ParticleBackground>
-            <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
-            </div>
+            <h1 className="text-5xl text-center pb-5"> My Projects </h1>
             
-            <div className="flex">
-                
-                <div className="flex-1 p-4">
-                    <h1 className="text-3xl text-center"> My Projects </h1>
-                    {projectNames.map((item, index) => (
-                        <div key={index}>
-                            <div data-aos="fade" key={index} className={`flex pb-6 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-                                <div className={`mockup-window border bg-base-600 w-1/2 ${index % 2 === 0 ? 'border-r' : 'border-l'}`}>
-                                    <div className="flex justify-center px-4 pb-10 bg-base-350">
-                                        <h1 className="text-white text-4xl text-center"> 
-                                            {item}
-                                        </h1>
-                                    </div>
-                                    <div className="flex justify-center px-4 pb-10 bg-base-350">
-                                        <Image src={`/project${index+1}.png`} alt="Project Screenshot" width={500} height={300} className="mx-auto p-2" />
-                                    </div>
-                                </div>
-                              
-                                    <div className="flex-1 p-6 text-3xl">
-                                        <div className={raleway.className}>
-                                            <h1>{descriptions[index]}</h1>
-                                    </div>
-                                    {index !== 1 && (
-                                        <div className="pt-4">
-                                            <Button variant="outline" asChild>
-                                                <Link href={`$projectLinks[index]`}> Link To Project </Link>
-                                            </Button>
-                                        </div>
-                                    )} 
-                                   
-                                </div>
+                <div className="flex gap-10 pl-5 pr-5">
+                    <div className="grow card w-96 bg-gray-900 shadow-xl">
+                        <figure><img src="/project1.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">Project IRIS</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div className="card-actions justify-end">
+                            <button className="btn btn-primary">Learn More</button>
                             </div>
-                            <ParticleBackground
-                                className="absolute -z-10 animate-fade-in w-full h-full"
-                                quantity={200}
-                            ></ParticleBackground>
-                            <div className="divider"></div>
-
                         </div>
-                    ))}
+                    </div>
+                    <div className="grow card w-96 bg-gray-900 shadow-xl">
+                        <figure><img src="/project2.png" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">Medixly</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div className="card-actions justify-end">
+                            <button className="btn btn-primary">Learn More  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grow card w-96 bg-gray-900 shadow-xl">
+                        <figure><img src="/project3Final.jpg" alt="Shoes" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">Smart Page</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div className="card-actions justify-end">
+                            <button className="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 
-            </div>    
+
+            
+            
+            
+   
         </div>
     )
 }

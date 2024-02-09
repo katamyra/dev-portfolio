@@ -19,8 +19,8 @@ export default function notes() {
             <Header></Header>
             <AnimatedCursor></AnimatedCursor>
             <div>
-            <div className="text-3xl text-center pb-5">
-                <h1>A Collection of the Notes I Have Taken</h1>
+            <div className="text-5xl text-center pb-5">
+                <h1>A Collection of My Notes</h1>
             </div>
             <div className="grid grid-cols-3 gap-10">
                 <Card>
@@ -41,7 +41,7 @@ export default function notes() {
                         <CardDescription>Data Structures and Algorithms</CardDescription>
                     </CardHeader>
                     <CardContent>
-                        Topics: Linked Lists, Stacks/Queues, BSTs, Heaps, HashMaps
+                        Topics: Linked Lists, Stacks, Queues, Binary Search Trees, Heaps, HashMaps
                     </CardContent>
                     <CardFooter>
                         <Button className="w-full"><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS1332/Exam%201/CompiledNotes.pdf">Link To Notes</a></Button>
