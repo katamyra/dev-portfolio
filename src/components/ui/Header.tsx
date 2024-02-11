@@ -30,7 +30,7 @@ export default function Header() {
             <li>
                 <details>
                 <summary>Info</summary>
-                <ul className="p-2">
+                <ul className="p-2 z-40 bg-gray-900">
                     <li><a href='/aboutme'>About Me!</a></li>
                     <li><a>Skills</a></li>
                 </ul>
