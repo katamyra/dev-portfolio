@@ -39,7 +39,7 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <div className={orbitron.className}>
-              <h1 className="lg:text-9xl text-xl pb-4">
+              <h1 className="lg:text-9xl text-3xl pb-4">
                 Katamyra
               </h1>
             </div>
@@ -52,11 +52,11 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
       
-              <p className="lg:text-2xl pr-2 text-sm">
+              <p className="lg:text-2xl pr-2 text-xl">
                 I{"'"}m Krish Katariya,
               </p>
             </motion.div>
-            <div className="lg:text-2xl text-sm text-red-400">
+            <div className="lg:text-2xl text-xl text-red-400">
               <Typewriter
                 options = {{
                   strings: ["a Software Developer", "a Georgia Tech CS Student", "an aspiring ML Engineer"],
