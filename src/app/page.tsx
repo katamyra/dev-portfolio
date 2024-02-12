@@ -68,7 +68,7 @@ export default function Home() {
                   />
             </div>
           </div>
-          <div className="flex flex-wrap justify-center text-sm lg:text-xl pb-5">
+          <div className="hidden lg:flex flex-wrap justify-center text-sm lg:text-xl pb-5">
             <AnimatedTextWord text="I am interested in building full stack applications, especially with a specialization in AI."/>
           </div>
       
