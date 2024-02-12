@@ -15,7 +15,7 @@ export default function Header() {
                 <a>Info</a>
                 <ul className="p-2">
                     <li><a href="/aboutme">About Me!</a></li>
-                    <li><a>Skills</a></li>
+                    <li><a href="/skills">Skills</a></li>
                 </ul>
                 </li>
 

@@ -10,3 +10,5 @@
 * Interesting Components To Use?
     * https://primereact.org/scrolltop/
     
+
+Good vertical component: https://github.com/Dorota1997/react-frontend-dev-portfolio/blob/main/src/components/Experience.js

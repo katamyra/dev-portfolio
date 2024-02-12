@@ -14,26 +14,24 @@ const orbitron = Orbitron({subsets: ["latin"]});
 import Header from "@/components/ui/Header";
 import { useEffect, useState } from "react";
 import Loading from "@/components/ui/Loading";
+import { useScroll } from "framer-motion"
+import Timeline from "@/components/ui/timeline";
 export default function Home() {
-  const router = useRouter();
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: "./LoadingAnim.json",
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-
   
+  const { scrollYProgress } = useScroll();
   
   return (
+    
     <div>
-        <div>
+        <div className="h-screen">
+        <motion.div
+          className="z-40 fixed top-0 left-0 right-0 h-3 bg-red-400 transform-origin-0"
+          style={{ scaleX: scrollYProgress }}
+        />
         <Header></Header>
         <div className="mt-40 flex flex-col items-center ">
-      
-      
+
+         
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,8 +95,29 @@ export default function Home() {
           quantity={400}
         ></ParticleBackground>
         <AnimatedCursor></AnimatedCursor>
+        <div className="fixed bottom-0 w-full z-40 text-white text-center py-4">
+            <svg
+          className="z-40 h-10 w-10 text-red-400 inline-block align-middle"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
       </div>
-    </div>
+      </div>
+      
+      <div className={orbitron.className}>
+        <h1 className="text-3xl w-screen text-center pb-10"> My Timeline</h1>
+      </div>
+      <Timeline/>
+      </div>
   
               
 )}
