@@ -17,7 +17,7 @@ export default function aboutme() {
                 <div className='w-1/2 pl-6'>
                     <AboutMeAccordion></AboutMeAccordion>
                 </div>
-                <div className="pl-40 flex items-center justify-center">
+                <div className="w-1/2 pl-40 flex items-center justify-center">
                     <Image className="rounded-full max-w-full max-h-full" width={400} height={400} src="/me.jpeg" alt="Image of Me"></Image>
                 </div>
             
