@@ -39,47 +39,43 @@ export default function Projects() {
             </div>
             
             
-                <div className="flex gap-10 pl-5 pr-5">
-                    <div className="grow card w-96 bg-slate-900 shadow-xl">
-                        <figure><img src="/project1.png" alt="Shoes" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Project IRIS</h2>
-                            <p>{descriptions[0]}</p>
-                            <div className="card-actions justify-end">
-                            <button className="btn btn-primary"><Link href="https://github.com/katamyra/ProjectIris" target="_blank">Learn More</Link></button>
-                            
-
-                            </div>
-                        </div>  
+                <div className="flex flex-wrap gap-20 pl-5">
+                    <div className="w-full md:w-1/4">
+                        <div className="card bg-slate-900 shadow-xl">
+                            <figure><img src="/project1.png" alt="Shoes" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Project IRIS</h2>
+                                <p>{descriptions[0]}</p>
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary"><Link href="https://github.com/katamyra/ProjectIris" target="_blank">Learn More</Link></button>
+                                </div>
+                            </div>  
+                        </div>
                     </div>
-                    <div className="grow card w-96 bg-slate-900 shadow-xl">
-                        <figure><img src="/project2.png" alt="Shoes" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Medixly</h2>
-                            <p>{descriptions[1]}</p>
-                            <div className="card-actions justify-end">
+                    <div className="w-full md:w-1/4">
+                        <div className="card bg-slate-900 shadow-xl">
+                            <figure><img src="/project2.png" alt="Shoes" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Medixly</h2>
+                                <p>{descriptions[1]}</p>
+                                <div className="card-actions justify-end">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="grow card w-96 bg-slate-900 shadow-xl">
-                        <figure><img src="/project3Final.jpg" alt="Shoes" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Smart Page</h2>
-                            <p>{descriptions[2]}</p>
-                            <div className="card-actions justify-end">
-                            <button className="btn btn-primary"><Link href="https://github.com/katamyra/SmartPage" target="_blank">Learn More</Link></button>
+                    <div className="w-full md:w-1/4">
+                        <div className="card bg-slate-900 shadow-xl">
+                            <figure><img src="/project3Final.jpg" alt="Shoes" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Smart Page</h2>
+                                <p>{descriptions[2]}</p>
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary"><Link href="https://github.com/katamyra/SmartPage" target="_blank">Learn More</Link></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-
-                                
-
-            
-            
-            
-   
         </div>
     )
 }
