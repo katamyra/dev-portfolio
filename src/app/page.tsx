@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import Loading from "@/components/ui/Loading";
 import { useScroll } from "framer-motion"
 import Timeline from "@/components/ui/timeline";
+
 export default function Home() {
   
   const { scrollYProgress } = useScroll();
@@ -117,6 +118,7 @@ export default function Home() {
         <h1 className="text-3xl w-screen text-center pb-10"> My Timeline</h1>
       </div>
       <Timeline/>
+
       </div>
   
               

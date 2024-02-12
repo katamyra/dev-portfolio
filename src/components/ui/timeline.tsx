@@ -66,6 +66,33 @@ export default function Timeline() {
             <hr />
           </li>
 
+          <li>
+            <hr />
+            <div className="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            </div>     
+            <div className="timeline-start md:text-end mb-10">
+        <time className="font-mono italic">2021</time>      
+            <div className="text-lg font-black">Extra Curricular Activity</div>             
+            After further developing my programming skills, I started to join extracurricular activities around my school and community. For example, I joined Irvine CubeSAT, a district wide program aimed at sending nano-satellites to space in my Freshman Year. I learned basic C++ and Rust, helping write code to control the power supply of the nano-satellite.
+                </div>
+            <hr />
+          </li>
+
+          <li>
+            <hr />
+            <div className="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            </div>
+            <div className="timeline-end mb-10">
+        <time className="font-mono italic">2022</time>
+        <div className="text-lg font-black">Machine Learning </div>
+           As I worked on projects in school and with my friends, I began to create small projects that used basic Machine Learning. While I didn{"'"}t understand much about how the ML worked, I worked on basic computer vision through science fair projects, starting with weed detectors and moving onto more advanced CV such as melanoma detection and semantic segmentation. 
+            </div>
+            <hr />
+          </li>
+
+
 
           <li>
             <hr />
@@ -73,9 +100,9 @@ export default function Timeline() {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
             </div>
             <div className="timeline-start md:text-end mb-10">
-        <time className="font-mono italic">2021</time>
-        <div className="text-lg font-black">Extra Curricular Activities</div>
-       After further developing my programming skills, I started to join extracurricular activities around my school and community. For example, I joined Irvine CubeSAT, a district wide program aimed at sending nano-satellites to space in my Freshman Year. I learned basic C++ and Rust, helping write code to control the power supply of the nano-satellite.
+        <time className="font-mono italic">2022</time>
+        <div className="text-lg font-black">Programming Skills</div>
+        Around this time I also began to work on my programming skills by completing problems on sites such as USACO and Hackerrank, placing silver in USACO. 
             </div>
           </li>
         </ul>
