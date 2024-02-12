@@ -39,9 +39,9 @@ export default function Projects() {
             </div>
             
             
-                <div className="flex flex-wrap gap-20 pl-5">
+                <div className="flex flex-wrap gap-20 md: pl-10">
                     <div className="w-full md:w-1/4">
-                        <div className="card bg-slate-900 shadow-xl">
+                        <div className="card bg-slate-900 shadow-xl h-full">
                             <figure><img src="/project1.png" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Project IRIS</h2>
@@ -53,7 +53,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/4">
-                        <div className="card bg-slate-900 shadow-xl">
+                        <div className="card bg-slate-900 shadow-xl h-full">
                             <figure><img src="/project2.png" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Medixly</h2>
@@ -64,7 +64,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/4">
-                        <div className="card bg-slate-900 shadow-xl">
+                        <div className="card bg-slate-900 shadow-xl h-full">
                             <figure><img src="/project3Final.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">Smart Page</h2>
