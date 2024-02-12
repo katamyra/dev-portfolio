@@ -75,7 +75,7 @@ export default function Home() {
       
       
             <div className="flex">
-              <div className="flex-auto mockup-code w-1/2 bg-gray-900 pt-5">
+              <div className="flex-auto mockup-code w-full lg:w-1/2 bg-gray-900 pt-5">
                 <pre data-prefix="$" className="text-success"><code>npm init krish</code></pre>
                 <pre data-prefix=">" className="text-warning"><code>installing...</code></pre>
                 <pre data-prefix=">"><code>Age? 18</code></pre>

@@ -24,7 +24,7 @@ export default function notes() {
             <div className="text-5xl text-center pb-5">
                 <h1 className={sharetech.className}>A Collection of My Notes</h1>
             </div>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <Card>
                     <CardHeader>
                         <CardTitle>CS 2110 </CardTitle>
