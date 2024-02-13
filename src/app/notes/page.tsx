@@ -34,7 +34,7 @@ export default function notes() {
                         <p className="text-red-350">Topics: Structure and Operation of Basic Computers, Digital Logic, Machine Language Instructions, Assembly, C</p>
                     </CardContent>
                     <CardFooter>
-                        <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS2110/Notes/CompiledNotes.pdf">Link To Notes</a></Button>
+                        <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS2110/CompiledNotes.pdf">Link To Notes</a></Button>
                     </CardFooter>
                 </Card>
                 <Card>
@@ -46,7 +46,7 @@ export default function notes() {
                         Topics: Linked Lists, Stacks, Queues, Binary Search Trees, Heaps, HashMaps
                     </CardContent>
                     <CardFooter>
-                        <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS1332/Exam%201/CompiledNotes.pdf">Link To Notes</a></Button>
+                        <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS1332/CompiledNotes.pdf">Link To Notes</a></Button>
                     </CardFooter>
                 </Card>
                 <Card>
@@ -58,7 +58,7 @@ export default function notes() {
                         Topics: SOLID, Requirements Engineering, Software Architecture
                     </CardContent>
                     <CardFooter>
-                    <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS2340/Notes/LectureNotes.pdf">Link To Notes</a></Button>
+                    <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS2340/LectureNotes.pdf">Link To Notes</a></Button>
                     </CardFooter>
                 </Card>
                 <Card>
