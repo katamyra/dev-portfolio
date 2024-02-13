@@ -95,7 +95,10 @@ export default function Home() {
           className="absolute inset-0 -z-10 animate-fade-in"
           quantity={400}
         ></ParticleBackground>
-        <AnimatedCursor></AnimatedCursor>
+        <AnimatedCursor
+          trailingSpeed={5}
+          outerSize={5}
+        ></AnimatedCursor>
         <div className="fixed bottom-0 w-full z-40 text-white text-center py-4">
             <svg
           className="z-40 h-10 w-10 text-red-400 inline-block align-middle"

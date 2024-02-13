@@ -19,7 +19,10 @@ export default function notes() {
         
         <div className="">
             <Header></Header>
-            <AnimatedCursor></AnimatedCursor>
+            <AnimatedCursor
+            trailingSpeed={5}
+            outerSize={5}
+            ></AnimatedCursor>
             <div>
             <div className="text-5xl text-center pb-5">
                 <h1 className={sharetech.className}>A Collection of My Notes</h1>

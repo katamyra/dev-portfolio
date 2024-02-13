@@ -8,7 +8,10 @@ export default function aboutme() {
     return (
         <div>
             <Header></Header>
-            <AnimatedCursor></AnimatedCursor>
+            <AnimatedCursor
+          trailingSpeed={5}
+          outerSize={5}
+        ></AnimatedCursor>
             <div className='text-center'>
                 <h1 className="text-2xl font-bold"> About Me! </h1>
             </div>

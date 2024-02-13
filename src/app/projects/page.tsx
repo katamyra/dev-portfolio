@@ -29,7 +29,10 @@ export default function Projects() {
         
         <div className="h-screen w-screen">
             <Header></Header>
-            <AnimatedCursor></AnimatedCursor>        
+            <AnimatedCursor
+          trailingSpeed={5}
+          outerSize={5}
+        ></AnimatedCursor>       
             <ParticleBackground
                 className="absolute -z-10 animate-fade-in w-full h-full"
                 quantity={200}
