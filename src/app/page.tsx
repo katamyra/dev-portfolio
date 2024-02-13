@@ -44,7 +44,7 @@ export default function Home() {
               </h1>
             </div>
           </motion.div>
-          <div className="text-2xl flex justify-between">
+          <div className="text-2xl pb-4 flex justify-between">
       
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ export default function Home() {
                   />
             </div>
           </div>
-          <div className="hidden lg:flex flex-wrap justify-center text-sm lg:text-xl pb-5">
+          <div className="hidden lg:flex flex-wrap justify-center text-sm lg:text-xl pb-7">
             <AnimatedTextWord text="I am interested in building full stack applications, especially with a specialization in AI."/>
           </div>
       
@@ -118,7 +118,6 @@ export default function Home() {
         <h1 className="text-3xl w-screen text-center pb-10"> My Timeline</h1>
       </div>
       <Timeline/>
-
       </div>
   
               

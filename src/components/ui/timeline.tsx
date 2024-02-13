@@ -73,7 +73,7 @@ export default function Timeline() {
             </div>     
             <div className="timeline-start md:text-end mb-10">
         <time className="font-mono italic">2021</time>      
-            <div className="text-lg font-black">Extra Curricular Activity</div>             
+            <div className="text-lg font-black">Extra Curricular Activities</div>             
             After further developing my programming skills, I started to join extracurricular activities around my school and community. For example, I joined Irvine CubeSAT, a district wide program aimed at sending nano-satellites to space in my Freshman Year. I learned basic C++ and Rust, helping write code to control the power supply of the nano-satellite.
                 </div>
             <hr />
