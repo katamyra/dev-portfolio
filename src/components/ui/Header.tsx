@@ -1,5 +1,6 @@
 
 import {ContactSheet} from './ContactSheet'
+import { Button } from './button'
 export default function Header() {
     return (
         <div className="navbar bg-base-600">
@@ -28,8 +29,10 @@ export default function Header() {
             </ul>
         </div>
         <div className="navbar-end">
+            <Button variant="ghost"> <a className="text-red-400" href='/KrishGTResume.pdf' target="_blank">Resume</a></Button>
             <ContactSheet/>
         </div>
         </div>
+
     )
 }

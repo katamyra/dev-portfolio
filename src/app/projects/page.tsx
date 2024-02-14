@@ -23,7 +23,7 @@ const raleway = Raleway({subsets: ["latin"]});
 export default function Projects() {
     let projectNames = ["Project Iris", "Medixly", "Smart Page"]
     let descriptions = ["First place science fair project using maching learning techniques such as semantic segmentation to analyze eye movement patterns.", "Mobile app using neural networks to detect melanoma cancer vs moles given a user picture.", 
-    "Chrome extension that allows users to easily traverse textbook pages."]
+    "Chrome extension that allows users to easily traverse textbook pages.", 'IntelliPrep is a smart study optimizer. After inputting information about their next tests, students can use IntelliPrep to more efficiently plan out their study schedules.    ']
     let projectLinks = ["https://github.com/katamyra/ProjectIris", "https://github.com/katamyra/SmartPage", ]
     return (
         
@@ -45,7 +45,7 @@ export default function Projects() {
             <div className="flex flex-wrap gap-20 md: pl-10">
                 <div className="w-full md:w-1/4">
                     <div className="card bg-slate-900 shadow-xl h-full">
-                        <figure><img src="/project1.png" alt="Shoes" /></figure>
+                        <figure><img src="/project1.png" alt="Project IRIS Image" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Project IRIS</h2>
                             <p>{descriptions[0]}</p>
@@ -57,7 +57,7 @@ export default function Projects() {
                 </div>
                 <div className="w-full md:w-1/4">
                     <div className="card bg-slate-900 shadow-xl h-full">
-                        <figure><img src="/project2.png" alt="Shoes" /></figure>
+                        <figure><img src="/project2.png" alt="Medixly Image" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Medixly</h2>
                             <p>{descriptions[1]}</p>
@@ -68,12 +68,24 @@ export default function Projects() {
                 </div>
                 <div className="w-full md:w-1/4">
                     <div className="card bg-slate-900 shadow-xl h-full">
-                        <figure><img src="/project3Final.jpg" alt="Shoes" /></figure>
+                        <figure><img src="/project3Final.jpg" alt="Smart Page Image" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Smart Page</h2>
                             <p>{descriptions[2]}</p>
                             <div className="card-actions justify-end">
                                 <button className="btn btn-primary"><Link href="https://github.com/katamyra/SmartPage" target="_blank">Learn More</Link></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full md:w-1/4">
+                    <div className="card bg-slate-900 shadow-xl h-full">
+                        <figure><img src="/project4.png" alt="Intelliprep Image" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">Intelliprep</h2>
+                            <p>{descriptions[3]}</p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary"><Link href="https://github.com/IntelliPrep/code" target="_blank">Learn More</Link></button>
                             </div>
                         </div>
                     </div>

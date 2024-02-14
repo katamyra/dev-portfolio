@@ -35,10 +35,6 @@ const AboutMe = () => {
             <b>Soft skills:</b> Communication, Teamwork, Quick Learning                  
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-5">
-          <AccordionTrigger><p className="text-red-400">My Resume</p></AccordionTrigger>
-          <AccordionContent><Button variant="outline"><a className="text-red-400" target="_" href = "/KrishGTResume.pdf">Click to View Resume</a></Button></AccordionContent>
-        </AccordionItem>
         
        
       </Accordion>

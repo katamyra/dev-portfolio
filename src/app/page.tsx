@@ -17,9 +17,20 @@ import Loading from "@/components/ui/Loading";
 import { useScroll } from "framer-motion"
 import Timeline from "@/components/ui/timeline";
 
+
 export default function Home() {
   
   const { scrollYProgress } = useScroll();
+
+
+  const handleClick = () => {
+    window.scrollBy({
+      top: 600,
+      behavior: 'smooth' // You can change this to 'auto' for instant scrolling
+    });
+   
+    
+  };
   
   return (
     
@@ -119,6 +130,7 @@ export default function Home() {
       
       <div className={orbitron.className}>
         <h1 className="text-3xl w-screen text-center pb-10"> My Timeline</h1>
+    
       </div>
       <Timeline/>
       </div>
