@@ -1,7 +1,5 @@
 # My Website
 
-## ToDo
-* Add intelliprep 
+## To-do
 * Make modifications for mobile
 * Add education/skills as misc
-* create tab for notes button

@@ -22,7 +22,7 @@ const raleway = Raleway({subsets: ["latin"]});
 
 export default function Projects() {
     let projectNames = ["Project Iris", "Medixly", "Smart Page"]
-    let descriptions = ["First place science fair project using maching learning techniques such as semantic segmentation to analyze eye movement patterns.", "Mobile app using neural networks to detect melanoma cancer vs moles given a user picture.", 
+    let descriptions = ["First place science fair project using machine learning techniques such as semantic segmentation to analyze eye movement patterns.", "Mobile app using neural networks to detect melanoma cancer vs moles given a user picture.", 
     "Chrome extension that allows users to easily traverse textbook pages.", 'IntelliPrep is a smart study optimizer. After inputting information about their next tests, students can use IntelliPrep to more efficiently plan out their study schedules.    ']
     let projectLinks = ["https://github.com/katamyra/ProjectIris", "https://github.com/katamyra/SmartPage", ]
     return (
