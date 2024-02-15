@@ -18,6 +18,7 @@ const config = {
       },
     },
     extend: {
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -67,6 +68,10 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+      },
+      flexBasis: {
+        '2/7': '28.5714286%',
+        '3/7': '42.8571429%',
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

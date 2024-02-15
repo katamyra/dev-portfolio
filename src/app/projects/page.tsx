@@ -42,50 +42,52 @@ export default function Projects() {
             </div>
             
             
-            <div className="flex flex-wrap gap-20 md: pl-10">
-                <div className="w-full md:w-1/4">
-                    <div className="card bg-slate-900 shadow-xl h-full">
-                        <figure><img src="/project1.png" alt="Project IRIS Image" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Project IRIS</h2>
-                            <p>{descriptions[0]}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary"><Link href="https://github.com/katamyra/ProjectIris" target="_blank">Learn More</Link></button>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                <div className="w-full md:w-1/4">
-                    <div className="card bg-slate-900 shadow-xl h-full">
-                        <figure><img src="/project2.png" alt="Medixly Image" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Medixly</h2>
-                            <p>{descriptions[1]}</p>
-                            <div className="card-actions justify-end">
+            <div className="flex flex-row"> 
+                <div className="flex flex-wrap gap-10 md:pl-10 justify-between">
+                    <div className="w-full md:w-1/4 basis-2/7">
+                        <div className="card bg-slate-900 shadow-xl h-full">
+                            <figure><img src="/project1.png" alt="Project IRIS Image" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Project IRIS</h2>
+                                <p>{descriptions[0]}</p>
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary"><Link href="https://github.com/katamyra/ProjectIris" target="_blank">Learn More</Link></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full md:w-1/4">
-                    <div className="card bg-slate-900 shadow-xl h-full">
-                        <figure><img src="/project3Final.jpg" alt="Smart Page Image" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Smart Page</h2>
-                            <p>{descriptions[2]}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary"><Link href="https://github.com/katamyra/SmartPage" target="_blank">Learn More</Link></button>
+                    <div className="w-full md:w-1/4 basis-2/7">
+                        <div className="card bg-slate-900 shadow-xl h-full">
+                            <figure><img src="/project2.png" alt="Medixly Image" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Medixly</h2>
+                                <p>{descriptions[1]}</p>
+                                <div className="card-actions justify-end">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="w-full md:w-1/4">
-                    <div className="card bg-slate-900 shadow-xl h-full">
-                        <figure><img src="/project4.png" alt="Intelliprep Image" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Intelliprep</h2>
-                            <p>{descriptions[3]}</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary"><Link href="https://github.com/IntelliPrep/code" target="_blank">Learn More</Link></button>
+                    <div className="w-full md:w-1/4 basis-2/7">
+                        <div className="card bg-slate-900 shadow-xl h-full">
+                            <figure><img src="/project3Final.jpg" alt="Smart Page Image" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Smart Page</h2>
+                                <p>{descriptions[2]}</p>
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary"><Link href="https://github.com/katamyra/SmartPage" target="_blank">Learn More</Link></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full md:w-1/4 basis-2/7">
+                        <div className="card bg-slate-900 shadow-xl h-full">
+                            <figure><img src="/project4.png" alt="Intelliprep Image" /></figure>
+                            <div className="card-body">
+                                <h2 className="card-title">Intelliprep</h2>
+                                <p>{descriptions[3]}</p>
+                                <div className="card-actions justify-end">
+                                    <button className="btn btn-primary"><Link href="https://github.com/IntelliPrep/code" target="_blank">Learn More</Link></button>
+                                </div>
                             </div>
                         </div>
                     </div>
