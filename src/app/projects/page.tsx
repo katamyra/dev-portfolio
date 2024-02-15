@@ -44,7 +44,7 @@ export default function Projects() {
             
             <div className="flex flex-row"> 
                 <div className="flex flex-wrap gap-10 md:pl-10 justify-between">
-                    <div className="w-full md:w-1/4 basis-2/7">
+                    <div className="w-full md:w-1/4 md:basis-2/7">
                         <div className="card bg-slate-900 shadow-xl h-full">
                             <figure><img src="/project1.png" alt="Project IRIS Image" /></figure>
                             <div className="card-body">
@@ -56,7 +56,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/4 basis-2/7">
+                    <div className="w-full md:w-1/4 md:basis-2/7">
                         <div className="card bg-slate-900 shadow-xl h-full">
                             <figure><img src="/project2.png" alt="Medixly Image" /></figure>
                             <div className="card-body">
@@ -67,7 +67,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/4 basis-2/7">
+                    <div className="w-full md:w-1/4 md:basis-2/7">
                         <div className="card bg-slate-900 shadow-xl h-full">
                             <figure><img src="/project3Final.jpg" alt="Smart Page Image" /></figure>
                             <div className="card-body">
@@ -79,7 +79,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/4 basis-2/7">
+                    <div className="w-full md:w-1/4 md:basis-2/7">
                         <div className="card bg-slate-900 shadow-xl h-full">
                             <figure><img src="/project4.png" alt="Intelliprep Image" /></figure>
                             <div className="card-body">
