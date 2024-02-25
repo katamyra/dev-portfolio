@@ -64,15 +64,7 @@ export default function notes() {
                     <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS2340/LectureNotes.pdf" target="_blank">Link To Notes</a></Button>
                     </CardFooter>
                 </Card>
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Hands on Machine Learning</CardTitle>
-                        <CardDescription>Based on the 2nd edition book Hands on Machine Learning w/ Sci-kit, Keras, and Tensorflow</CardDescription>
-                    </CardHeader>
-                    <CardFooter>
-                    <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Personal%20Notes/HandsOnMl/CompiledNotes.pdf" target="_blank">Link To Notes</a></Button>
-                    </CardFooter>
-                </Card>
+                
             </div>
             <ParticleBackground
                 className="absolute inset-0 -z-10 animate-fade-in"
