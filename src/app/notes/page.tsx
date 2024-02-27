@@ -31,7 +31,7 @@ export default function notes() {
                 <Card>
                     <CardHeader>
                         <CardTitle>CS 2110 </CardTitle>
-                        <CardDescription>Notes on Computer Organization and Programming</CardDescription>
+                        <CardDescription>Computer Organization and Programming</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <p className="text-red-350">Topics: Structure and Operation of Basic Computers, Digital Logic, Machine Language Instructions, Assembly, C</p>
