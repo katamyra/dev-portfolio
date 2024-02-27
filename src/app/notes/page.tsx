@@ -64,7 +64,18 @@ export default function notes() {
                     <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS2340/LectureNotes.pdf" target="_blank">Link To Notes</a></Button>
                     </CardFooter>
                 </Card>
-                
+                <Card>
+                    <CardHeader>
+                        <CardTitle>CS 3001</CardTitle>
+                        <CardDescription>Ethics</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        Topics: Ethical Perspectives, Privacy
+                    </CardContent>
+                    <CardFooter>
+                    <Button className=""><a href="https://github.com/katamyra/Notes/blob/main/Compiled%20School%20Notes/CS3001/CompiledNotes.pdf" target="_blank">Link To Notes</a></Button>
+                    </CardFooter>
+                </Card>
             </div>
             <ParticleBackground
                 className="absolute inset-0 -z-10 animate-fade-in"
