@@ -10,6 +10,7 @@ export default function Testing() {
     });
     console.log(repos);
   }, []);
+
   return (
     <div>
       <AnimatedCursor trailingSpeed={5} outerSize={5}></AnimatedCursor>
