@@ -107,7 +107,7 @@ export default function Home() {
           quantity={400}
         ></ParticleBackground>
         <AnimatedCursor
-          trailingSpeed={5}
+          trailingSpeed={2}
           outerSize={5}
         ></AnimatedCursor>
         <div className="fixed bottom-0 w-full z-40 text-white text-center py-4">

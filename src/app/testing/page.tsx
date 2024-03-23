@@ -22,7 +22,7 @@ export default function Testing() {
 
     return (
       <div>
-        <AnimatedCursor trailingSpeed={5} outerSize={5}></AnimatedCursor>
+        <AnimatedCursor trailingSpeed={1} outerSize={5}></AnimatedCursor>
       </div>
     );
 }

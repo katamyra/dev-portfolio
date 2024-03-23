@@ -1,22 +1,30 @@
 "use client";
-import ProjectsCard from "@/components/ui/ProjectsCard";
-import Image from "next/image";
-import { motion, useScroll } from "framer-motion";
-import { useRef } from "react";
-import HeaderNav from "@/components/ui/HeaderNav";
 import ParticleBackground from "@/components/ui/ParticleBackground";
-import { ContactSheet } from "@/components/ui/ContactSheet";
-import { Raleway } from "next/font/google";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Header from "@/components/ui/Header";
 import AnimatedCursor from "react-animated-cursor";
 import { Share_Tech } from "next/font/google";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 const sharetech = Share_Tech({ weight: "400", subsets: ["latin"] });
 
-const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Projects() {
+  const [repos, setRepos] = useState(null);
+  useEffect(() => {
+    async function fetchRepos() {
+      const response = await fetch('/api');
+      if (!response.ok) {
+        console.error('Failed to fetch repos');
+        return;
+      }
+
+      const reposVal = await response.json();
+      console.log(reposVal)
+      setRepos(reposVal);
+    }
+
+    fetchRepos();
+  }, []);
   let projectNames = ["Project Iris", "Medixly", "Smart Page"];
   let descriptions = [
     "First place science fair project using machine learning techniques such as semantic segmentation to analyze eye movement patterns.",
@@ -40,85 +48,30 @@ export default function Projects() {
         <h1 className="pb-5 text-center text-5xl"> My Projects </h1>
       </div>
 
-      <div className="flex flex-row">
-        <div className="flex flex-wrap justify-between gap-10 md:pl-10">
-          <div className="md:basis-2/7 w-full md:w-1/4">
-            <div className="card h-full bg-slate-900 shadow-xl">
-              <figure>
-                <img src="/project1.png" alt="Project IRIS Image" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Project IRIS</h2>
-                <p>{descriptions[0]}</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <Link
-                      href="https://github.com/katamyra/ProjectIris"
-                      target="_blank"
-                    >
-                      Learn More
-                    </Link>
-                  </button>
+      <div className="container mx-auto px-4">
+
+  
+          {repos ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {repos.map(({ name }) => (
+              <div key={name} className="card card-compact w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div className="card-body">
+                  <h2 className="card-title">{name}</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">Buy Now</button>
+                  </div>
                 </div>
-              </div>
             </div>
+            ))}
           </div>
-          <div className="md:basis-2/7 w-full md:w-1/4">
-            <div className="card h-full bg-slate-900 shadow-xl">
-              <figure>
-                <img src="/project2.png" alt="Medixly Image" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Medixly</h2>
-                <p>{descriptions[1]}</p>
-                <div className="card-actions justify-end"></div>
-              </div>
-            </div>
-          </div>
-          <div className="md:basis-2/7 w-full md:w-1/4">
-            <div className="card h-full bg-slate-900 shadow-xl">
-              <figure>
-                <img src="/project3Final.jpg" alt="Smart Page Image" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Smart Page</h2>
-                <p>{descriptions[2]}</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <Link
-                      href="https://github.com/katamyra/SmartPage"
-                      target="_blank"
-                    >
-                      Learn More
-                    </Link>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="md:basis-2/7 w-full md:w-1/4">
-            <div className="card h-full bg-slate-900 shadow-xl">
-              <figure>
-                <img src="/project4.png" alt="Intelliprep Image" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Intelliprep</h2>
-                <p>{descriptions[3]}</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">
-                    <Link
-                      href="https://github.com/IntelliPrep/code"
-                      target="_blank"
-                    >
-                      Learn More
-                    </Link>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        ) : (
+          <p>No data available</p>
+        )}
+      </div>      
+      
+
     </div>
   );
 }
