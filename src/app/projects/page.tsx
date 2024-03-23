@@ -21,8 +21,8 @@ export default function Projects() {
 
       const reposVal = await response.json();
       console.log(reposVal);
-      const filteredRepos = reposVal.filter(item => !exclude.includes(item.name));
-      const sortedRepos = filteredRepos.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
+      const filteredRepos = reposVal.filter((item: { name: string }) => !exclude.includes(item.name));
+      const sortedRepos = filteredRepos.sort((a: any, b: any) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
       setRepos(sortedRepos);
 
     }
@@ -44,19 +44,19 @@ export default function Projects() {
       <div className="container mx-auto px-2">
 
         {repos ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {repos.map(({ name, description, clone_url }) => (
-          <div key={name} className="card w-150 bg-gray-900 text-primary-content">
-          <div className="card-body">
-            <h2 className="card-title text-white">{name}</h2>
-            <p className="text-white">{description}</p>
-            <div className="card-actions justify-end">
-              <button className="btn bg-purple-500"><a target="_blank" href={clone_url}>Learn More</a></button>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {(repos as any[]).map(({ name, description, clone_url }) => (
+              <div key={name} className="card w-150 bg-gray-900 text-primary-content">
+                <div className="card-body">
+                  <h2 className="card-title text-white">{name}</h2>
+                  <p className="text-white">{description}</p>
+                  <div className="card-actions justify-end">
+                    <button className="btn bg-purple-500"><a target="_blank" href={clone_url}>Learn More</a></button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-          ))}
-        </div>
         ) : (
           <p>Data Currently Loading...</p>
         )}
