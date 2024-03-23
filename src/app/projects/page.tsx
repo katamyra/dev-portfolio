@@ -10,6 +10,7 @@ const sharetech = Share_Tech({ weight: "400", subsets: ["latin"] });
 
 export default function Projects() {
   const [repos, setRepos] = useState(null);
+  let exclude = ["epitaph", "AdressBook", "katamyra"]
   useEffect(() => {
     async function fetchRepos() {
       const response = await fetch('/api');
@@ -19,23 +20,15 @@ export default function Projects() {
       }
 
       const reposVal = await response.json();
-      console.log(reposVal)
-      setRepos(reposVal);
+      console.log(reposVal);
+      const filteredRepos = reposVal.filter(item => !exclude.includes(item.name));
+      const sortedRepos = filteredRepos.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
+      setRepos(sortedRepos);
+
     }
 
     fetchRepos();
   }, []);
-  let projectNames = ["Project Iris", "Medixly", "Smart Page"];
-  let descriptions = [
-    "First place science fair project using machine learning techniques such as semantic segmentation to analyze eye movement patterns.",
-    "Mobile app using neural networks to detect melanoma cancer vs moles given a user picture.",
-    "Chrome extension that allows users to easily traverse textbook pages.",
-    "IntelliPrep is a smart study optimizer. After inputting information about their next tests, students can use IntelliPrep to more efficiently plan out their study schedules.    ",
-  ];
-  let projectLinks = [
-    "https://github.com/katamyra/ProjectIris",
-    "https://github.com/katamyra/SmartPage",
-  ];
   return (
     <div className="h-screen w-screen">
       <Header></Header>
@@ -50,24 +43,22 @@ export default function Projects() {
 
       <div className="container mx-auto px-4">
 
-  
-          {repos ? (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {repos.map(({ name }) => (
-              <div key={name} className="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                <div className="card-body">
-                  <h2 className="card-title">{name}</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
+        {repos ? (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {repos.map(({ name, description, clone_url }) => (
+          <div key={name} className="card w-96 bg-gray-900 text-primary-content">
+          <div className="card-body">
+            <h2 className="card-title text-white">{ name}</h2>
+            <p className="text-white">{description}</p>
+            <div className="card-actions justify-end">
+              <button className="btn bg-purple-500"><a target="_blank" href={clone_url}>Learn More</a></button>
             </div>
-            ))}
           </div>
+        </div>
+          ))}
+        </div>
         ) : (
-          <p>No data available</p>
+          <p>Data Currently Loading...</p>
         )}
       </div>      
       
