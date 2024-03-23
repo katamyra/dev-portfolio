@@ -46,12 +46,12 @@ export default function Projects() {
         {repos ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {(repos as any[]).map(({ name, description, clone_url }) => (
-              <div key={name} className="card w-150 bg-gray-900 text-primary-content">
+              <div key={name} className="card w-150 bg-slate-900 text-primary-content">
                 <div className="card-body">
                   <h2 className="card-title text-white">{name}</h2>
                   <p className="text-white">{description}</p>
                   <div className="card-actions justify-end">
-                    <button className="btn bg-purple-500"><a target="_blank" href={clone_url}>Learn More</a></button>
+                    <button className="btn btn-primary"><a target="_blank" href={clone_url}>Learn More</a></button>
                   </div>
                 </div>
               </div>
