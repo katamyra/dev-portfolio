@@ -10,7 +10,7 @@ const sharetech = Share_Tech({ weight: "400", subsets: ["latin"] });
 
 export default function Projects() {
   const [repos, setRepos] = useState(null);
-  let exclude = ["epitaph", "AdressBook", "katamyra"]
+  let exclude = ["epitaph", "AdressBook", "katamyra", "Cetamac"]
   useEffect(() => {
     async function fetchRepos() {
       const response = await fetch('/api');
