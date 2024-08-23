@@ -120,6 +120,34 @@ export default function Timeline() {
           </li>
 
 
+           
+          <li>
+            <hr />
+            <div className="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            </div>     
+            <div className="timeline-start md:text-end mb-10">
+        <time className="font-mono italic">2022</time>      
+            <div className="text-lg font-black">Front end frameworks</div>             
+            Now, I am learning front end frameworks and technologies in order to create new projects and applications, starting with this website!
+                </div>
+            <hr />
+          </li>
+
+          <li>
+            <hr />
+            <div className="timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            </div>
+            <div className="timeline-end mb-10">
+        <time className="font-mono italic">2022</time>
+        <div className="text-lg font-black"> Distributed Services and Cloud Architecture</div>
+           Over the summer I learned about using cloud services through AWS and Azure to create distributed services and applications. To cement this, I created a online CS grading portal online using AWS Lambda, AWS API Gateway, AWS S3, AWS Cloudfront, and Azure MySQL databases. 
+            </div>
+            <hr />
+          </li>
+
+         
           <li>
             <hr />
             <div className="timeline-middle">
@@ -127,10 +155,11 @@ export default function Timeline() {
             </div>
             <div className="timeline-start md:text-end mb-10">
         <time className="font-mono italic">2024</time>
-        <div className="text-lg font-black">Front End</div>
-        Now, I am learning front end frameworks and technologies in order to create new projects and applications, starting with this website!
+        <div className="text-lg font-black">Revisiting Machine Learning</div>
+        Over 2024 summer I interned with Georgia Tech & IBM applying machine learning techniques to predict the paths of storms ahead of time. Now I am continuing that research with IBM Researchers utilizing new techniques to create more realistic looking weather fields.
             </div>
           </li>
+
         </ul>
       </div>
     )
