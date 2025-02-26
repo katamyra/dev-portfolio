@@ -29,7 +29,7 @@ export default function Header() {
             </ul>
         </div>
         <div className="navbar-end">
-            <Button variant="ghost"> <a className="text-red-400" href='/KrishGTResume.pdf' target="_blank">Resume</a></Button>
+            <Button variant="ghost"> <a className="text-red-400" href='/resume.pdf' target="_blank">Resume</a></Button>
             <ContactSheet/>
         </div>
         </div>
